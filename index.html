@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>The African Pavilion | World Cup 2026 Hub</title>
-    <!-- Google Fonts & Font Awesome for Icons -->
+    <title>The African Pavilion | World Cup 2026 Hospitality</title>
+    <!-- Google Fonts & Font Awesome -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
@@ -22,7 +22,6 @@
             overflow-x: hidden;
         }
 
-        /* vibrant african-inspired theme palette */
         :root {
             --gold: #E6B422;
             --deep-green: #1A4A2F;
@@ -34,7 +33,6 @@
             --shadow-md: 0 20px 25px -12px rgba(0, 0, 0, 0.1);
         }
 
-        /* custom scrollbar */
         ::-webkit-scrollbar {
             width: 8px;
         }
@@ -46,7 +44,6 @@
             border-radius: 12px;
         }
 
-        /* header & navigation */
         .site-header {
             background: rgba(26, 74, 47, 0.95);
             backdrop-filter: blur(8px);
@@ -55,7 +52,6 @@
             top: 0;
             z-index: 100;
             padding: 1rem 2rem;
-            transition: all 0.3s ease;
         }
 
         .nav-container {
@@ -112,7 +108,6 @@
             transform: translateY(-2px);
         }
 
-        /* buttons & interactive elements */
         .btn {
             display: inline-block;
             background: var(--gold);
@@ -143,7 +138,6 @@
             color: #1e2a2f;
         }
 
-        /* hero section */
         .hero {
             background: linear-gradient(105deg, #1F3D30 0%, #10261E 100%);
             padding: 3rem 2rem 4rem;
@@ -178,7 +172,6 @@
             opacity: 0.9;
         }
 
-        /* countdown card */
         .countdown-card {
             background: rgba(255,255,240,0.1);
             backdrop-filter: blur(4px);
@@ -213,7 +206,6 @@
             font-weight: 500;
         }
 
-        /* sections */
         .section {
             padding: 5rem 2rem;
             max-width: 1300px;
@@ -228,44 +220,163 @@
             color: var(--deep-green);
         }
 
-        /* interactive gallery grid */
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 1.8rem;
-            margin-bottom: 1rem;
+        /* Welcome photo & package images */
+        .welcome-photo {
+            text-align: center;
+            margin-bottom: 3rem;
         }
-        .gallery-item {
+        .welcome-img {
+            max-width: 100%;
+            border-radius: 32px;
+            box-shadow: var(--shadow-md);
+            max-height: 550px;
+            width: auto;
+            object-fit: cover;
+        }
+        .explore-text {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 800;
+            margin: 2rem 0 2rem;
+            color: var(--terracotta);
+            letter-spacing: -0.5px;
+        }
+        .package-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+        .package-card {
             background: white;
-            border-radius: 24px;
+            border-radius: 28px;
             overflow: hidden;
             box-shadow: var(--shadow-sm);
-            transition: all 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
-            cursor: pointer;
-            transform: translateY(0);
+            transition: 0.3s;
         }
-        .gallery-item:hover {
-            transform: translateY(-8px);
+        .package-card:hover {
+            transform: translateY(-6px);
             box-shadow: var(--shadow-md);
         }
-        .gallery-img {
+        .package-img {
             width: 100%;
-            aspect-ratio: 4 / 3;
+            aspect-ratio: 1 / 0.9;
             object-fit: cover;
-            transition: transform 0.4s;
         }
-        .gallery-item:hover .gallery-img {
-            transform: scale(1.03);
+        .package-name {
+            padding: 1rem;
+            font-weight: 700;
+            text-align: center;
+            background: var(--cream);
+            font-size: 1rem;
         }
-        .gallery-caption {
-            padding: 0.9rem 1rem;
-            font-weight: 600;
+
+        /* City packages (Mexico, Toronto, LA, Atlanta) */
+        .city-packages {
+            margin: 3rem 0;
+        }
+        .city-card {
             background: white;
-            color: var(--charcoal);
-            border-top: 1px solid #f0e1cd;
+            border-radius: 40px;
+            margin-bottom: 3rem;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid #ffe1aa;
         }
-        
-        /* matches interactive schedule */
+        .city-header {
+            background: var(--deep-green);
+            padding: 1.5rem;
+            color: white;
+        }
+        .city-header h3 {
+            font-size: 1.8rem;
+            margin-bottom: 0.25rem;
+        }
+        .city-header p {
+            opacity: 0.9;
+        }
+        .tier-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1rem;
+            padding: 1.5rem;
+        }
+        .tier-card {
+            background: #fef7e8;
+            border-radius: 24px;
+            padding: 1.2rem;
+            transition: 0.2s;
+            border: 1px solid #f0e0ca;
+        }
+        .tier-card:hover {
+            background: #fff;
+            transform: scale(1.01);
+        }
+        .tier-name {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--terracotta);
+            margin-bottom: 0.5rem;
+        }
+        .tier-price {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--deep-green);
+            margin: 0.5rem 0;
+        }
+        .tier-features {
+            list-style: none;
+            margin: 1rem 0;
+        }
+        .tier-features li {
+            margin-bottom: 0.5rem;
+            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .tier-features i {
+            color: var(--gold);
+            width: 1.2rem;
+        }
+        .hotel {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #5a4a32;
+            margin-top: 0.75rem;
+        }
+
+        .warning-box {
+            background: #fff0db;
+            border-left: 6px solid var(--terracotta);
+            padding: 1.5rem;
+            border-radius: 24px;
+            margin: 2rem 0;
+            font-size: 0.9rem;
+        }
+        .journey-box {
+            text-align: center;
+            background: linear-gradient(125deg, #1A4A2F, #2b6a44);
+            padding: 2rem;
+            border-radius: 40px;
+            color: white;
+            margin: 2rem 0;
+        }
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1rem;
+        }
+
+        /* Old interactive sections (matches, facts, newsletter) */
         .matches-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -277,11 +388,11 @@
             border-radius: 28px;
             padding: 1.4rem;
             box-shadow: var(--shadow-sm);
-            transition: all 0.25s;
+            transition: 0.25s;
             border: 1px solid #ffe1b3;
         }
         .match-card:hover {
-            box-shadow: 0 20px 25px -12px rgba(0,0,0,0.15);
+            box-shadow: var(--shadow-md);
             border-color: var(--gold);
         }
         .teams {
@@ -291,16 +402,6 @@
             justify-content: space-between;
             gap: 0.5rem;
         }
-        .vs {
-            color: var(--terracotta);
-        }
-        .match-info {
-            margin: 1rem 0;
-            color: #4a5b52;
-            display: flex;
-            gap: 1rem;
-            align-items: center;
-        }
         .remind-btn {
             background: var(--deep-green);
             color: white;
@@ -308,40 +409,20 @@
             padding: 0.5rem 1rem;
             border-radius: 30px;
             font-weight: 600;
-            cursor: pointer;
             width: 100%;
-            transition: 0.2s;
+            cursor: pointer;
         }
         .remind-btn:hover {
             background: var(--gold);
             color: #1e2a2f;
         }
-
-        /* fun fact widget */
         .fact-widget {
             background: linear-gradient(125deg, #FAF3E0, #FFF6E8);
             border-radius: 40px;
             padding: 2rem;
-            margin-top: 2rem;
             text-align: center;
-            border: 1px solid #e9cf9e;
+            margin-top: 2rem;
         }
-        .fact-text {
-            font-size: 1.2rem;
-            font-weight: 500;
-            margin: 1rem 0;
-            font-style: italic;
-        }
-        .new-fact-btn {
-            background: var(--terracotta);
-            color: white;
-            border: none;
-            padding: 0.7rem 1.5rem;
-            border-radius: 60px;
-            font-weight: 600;
-        }
-
-        /* newsletter form */
         .newsletter {
             background: var(--deep-green);
             border-radius: 44px;
@@ -349,10 +430,6 @@
             text-align: center;
             color: white;
             margin: 3rem 0;
-        }
-        .newsletter h3 {
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
         }
         .form-group {
             display: flex;
@@ -366,169 +443,165 @@
             border-radius: 60px;
             border: none;
             width: 280px;
-            font-size: 1rem;
         }
-        .newsletter .btn {
-            background: var(--gold);
-            color: #1F2C2B;
-        }
-        .news-message {
-            margin-top: 1rem;
-            font-weight: 500;
-        }
-
-        /* lightbox overlay */
-        .lightbox {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0,0,0,0.92);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 1000;
-            visibility: hidden;
-            opacity: 0;
-            transition: all 0.25s ease;
-        }
-        .lightbox.active {
-            visibility: visible;
-            opacity: 1;
-        }
-        .lightbox-content {
-            position: relative;
-            max-width: 85vw;
-            max-height: 85vh;
-        }
-        .lightbox-img {
-            max-width: 100%;
-            max-height: 80vh;
-            border-radius: 24px;
-            box-shadow: 0 20px 35px rgba(0,0,0,0.5);
-            border: 3px solid var(--gold);
-        }
-        .close-lightbox {
-            position: absolute;
-            top: -40px;
-            right: 0;
-            font-size: 2.2rem;
-            color: white;
-            cursor: pointer;
-            background: none;
-            border: none;
-        }
-        .lightbox-nav {
-            position: absolute;
-            top: 50%;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            transform: translateY(-50%);
-            padding: 0 1rem;
-        }
-        .nav-btn {
-            background: rgba(0,0,0,0.6);
-            color: white;
-            border: none;
-            font-size: 2rem;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            cursor: pointer;
-            transition: 0.2s;
-        }
-        .nav-btn:hover {
-            background: var(--gold);
-            color: black;
-        }
-
         footer {
             background: #10261E;
             color: #e6d5b8;
             text-align: center;
             padding: 2rem;
-            font-size: 0.9rem;
         }
-
         @media (max-width: 768px) {
-            .nav-container {
-                flex-direction: column;
-            }
-            .hero h1 {
-                font-size: 2rem;
-            }
-            .countdown-number {
-                font-size: 1.6rem;
-                min-width: 60px;
-            }
-            .section-title {
-                font-size: 1.8rem;
-            }
-            .gallery-grid {
-                grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-            }
+            .hero h1 { font-size: 2rem; }
+            .countdown-number { font-size: 1.6rem; min-width: 60px; }
+            .tier-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
-
 <header class="site-header">
     <div class="nav-container">
         <div class="logo-wrapper">
-            <!-- Logo image (place your LOGO-03.png in same directory) -->
-            <img src="LOGO-03.png" alt="The African Pavilion Logo" class="logo-img" onerror="this.src='https://placehold.co/200x80?text=African+Pavilion'">
+            <img src="LOGO-03.png" alt="Logo" class="logo-img" onerror="this.src='https://placehold.co/200x80?text=African+Pavilion'">
             <div class="logo-text"><span>THE</span> AFRICAN PAVILION</div>
         </div>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
-            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#packages">Packages</a></li>
+            <li><a href="#cities">Destinations</a></li>
             <li><a href="#matches">Matches</a></li>
-            <li><a href="#interactive">Experience</a></li>
-            <li><a href="#newsletter">Connect</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </div>
 </header>
 
 <main>
-    <!-- Hero + Countdown section -->
+    <!-- Hero Countdown section -->
     <section id="home" class="hero">
         <div class="hero-content">
             <h1>Where Africa meets the World Cup</h1>
             <p>Celebrate rhythm, culture, and football’s greatest spectacle at the official African Pavilion. Immerse yourself in electrifying experiences, exclusive hospitality, and the heartbeat of the continent.</p>
-            <div class="countdown-card" id="countdownContainer">
+            <div class="countdown-card">
                 <div class="countdown-item"><div class="countdown-number" id="days">00</div><div class="countdown-label">Days</div></div>
                 <div class="countdown-item"><div class="countdown-number" id="hours">00</div><div class="countdown-label">Hours</div></div>
                 <div class="countdown-item"><div class="countdown-number" id="minutes">00</div><div class="countdown-label">Minutes</div></div>
                 <div class="countdown-item"><div class="countdown-number" id="seconds">00</div><div class="countdown-label">Seconds</div></div>
             </div>
-            <p style="margin-top: 2rem; font-size:0.9rem;">⚡ to FIFA World Cup 2026 Opening Match • USA, Mexico, Canada ⚡</p>
+            <p style="margin-top: 2rem;">⚡ FIFA World Cup 2026 • USA, Mexico, Canada ⚡</p>
         </div>
     </section>
 
-    <!-- Gallery with all 7 photos (interactive lightbox) -->
-    <section id="gallery" class="section">
-        <h2 class="section-title"><i class="fas fa-images" style="margin-right: 12px; color: var(--gold);"></i> Spirit of the Pavilion</h2>
-        <div class="gallery-grid" id="photoGallery">
-            <!-- photo1 to photo7 will be dynamically generated but we construct static array to ensure correct order -->
+    <!-- New Main Welcoming Photo -->
+    <div class="section">
+        <div class="welcome-photo">
+            <img src="photo1.png" alt="African Pavilion Welcome" class="welcome-img" onerror="this.src='https://placehold.co/1200x600?text=Welcome+to+The+African+Pavilion'">
         </div>
-    </section>
+        <div class="explore-text">
+            explore our packages
+        </div>
 
-    <!-- Upcoming Matches Interactive Widget -->
-    <section id="matches" class="section">
-        <h2 class="section-title"><i class="fas fa-futbol" style="margin-right: 12px; color: var(--gold);"></i> African Giants • Match Schedule</h2>
+        <!-- Package images grid (6 images) -->
+        <div class="package-grid">
+            <div class="package-card"><img src="Packages For Every Fan.jpeg" class="package-img" alt="Packages For Every Fan"><div class="package-name">Packages For Every Fan</div></div>
+            <div class="package-card"><img src="Elite Package.jpeg" class="package-img" alt="Elite Package"><div class="package-name">Elite Package</div></div>
+            <div class="package-card"><img src="Quarter Finals Package.jpeg" class="package-img" alt="Quarter Finals"><div class="package-name">Quarter Finals Package</div></div>
+            <div class="package-card"><img src="Semi Finals Package.jpeg" class="package-img" alt="Semi Finals"><div class="package-name">Semi Finals Package</div></div>
+            <div class="package-card"><img src="Starter Package.jpeg" class="package-img" alt="Starter Package"><div class="package-name">Starter Package</div></div>
+            <div class="package-card"><img src="The Finals Package.jpeg" class="package-img" alt="The Finals"><div class="package-name">The Finals Package</div></div>
+        </div>
+    </div>
+
+    <!-- City Packages (Mexico, Toronto, Los Angeles, Atlanta) -->
+    <div id="cities" class="section">
+        <h2 class="section-title"><i class="fas fa-map-marked-alt"></i> Official Hospitality Packages</h2>
+        
+        <!-- Mexico City -->
+        <div class="city-card">
+            <div class="city-header">
+                <h3>🏟️ 🇲🇽 Mexico City • Opening Match • Estadio Azteca</h3>
+                <p>Match: Mexico vs South Africa | June 11, 2026 | Estadio Azteca</p>
+            </div>
+            <div class="tier-grid">
+                <div class="tier-card"><div class="tier-name">Essential</div><div class="tier-price">$4,999</div><ul class="tier-features"><li><i class="fas fa-ticket-alt"></i> FIFA Hospitality Match Ticket</li><li><i class="fas fa-bed"></i> 4 nights accommodation</li><li><i class="fas fa-bus"></i> Airport & match transfers</li><li><i class="fas fa-city"></i> City orientation tour</li></ul><div class="hotel">🏨 Hampton Inn & Suites Reforma • 3-4★ • Polanco District • Bed & Breakfast</div></div>
+                <div class="tier-card"><div class="tier-name">Premium</div><div class="tier-price">$8,999</div><ul class="tier-features"><li><i class="fas fa-ticket-alt"></i> Enhanced FIFA Hospitality</li><li><i class="fas fa-bed"></i> 4 nights luxury hotel</li><li><i class="fas fa-car"></i> VIP transportation</li><li><i class="fas fa-landmark"></i> Teotihuacan & Historic tours</li><li><i class="fas fa-utensils"></i> Welcome dinner at Quintonil</li></ul><div class="hotel">🏨 JW Marriott Polanco • 4-5★ • Premium Location • Half Board (B&B + 2 Dinners)</div></div>
+                <div class="tier-card"><div class="tier-name">Luxury</div><div class="tier-price">$15,999</div><ul class="tier-features"><li><i class="fas fa-crown"></i> VIP FIFA Premium Lounge</li><li><i class="fas fa-bed"></i> 5 nights luxury suite</li><li><i class="fas fa-chauffeur"></i> Private chauffeur service</li><li><i class="fas fa-star"></i> Exclusive experiences</li><li><i class="fas fa-concierge-bell"></i> Personal concierge</li></ul><div class="hotel">🏨 Four Seasons Mexico City • 5★ Luxury Suite • Full Board + $500 Credit</div></div>
+            </div>
+        </div>
+
+        <!-- Toronto -->
+        <div class="city-card">
+            <div class="city-header">
+                <h3>🍁 🇨🇦 Toronto • Canada Opener • BMO Field</h3>
+                <p>Match: Canada vs TBD | June 12, 2026 | BMO Field</p>
+            </div>
+            <div class="tier-grid">
+                <div class="tier-card"><div class="tier-name">Essential</div><div class="tier-price">$6,299</div><ul class="tier-features"><li><i class="fas fa-ticket-alt"></i> FIFA Hospitality Ticket</li><li><i class="fas fa-bed"></i> 4 nights downtown hotel</li><li><i class="fas fa-bus"></i> Airport & match transfers</li><li><i class="fas fa-city"></i> CN Tower & Distillery tour</li></ul><div class="hotel">🏨 Delta by Marriott Toronto • 3-4★ • Harbourfront • Bed & Breakfast</div></div>
+                <div class="tier-card"><div class="tier-name">Premium</div><div class="tier-price">$10,999</div><ul class="tier-features"><li><i class="fas fa-ticket-alt"></i> Enhanced FIFA Hospitality</li><li><i class="fas fa-bed"></i> 4 nights premium hotel</li><li><i class="fas fa-car"></i> VIP transportation</li><li><i class="fas fa-water"></i> Niagara Falls day trip</li><li><i class="fas fa-utensils"></i> Dinner at Canoe</li></ul><div class="hotel">🏨 Fairmont Royal York • 4-5★ • Financial District • Half Board (B&B + 2 Dinners)</div></div>
+                <div class="tier-card"><div class="tier-name">Luxury</div><div class="tier-price">$18,999</div><ul class="tier-features"><li><i class="fas fa-crown"></i> VIP FIFA Premium Suite</li><li><i class="fas fa-bed"></i> 5 nights luxury suite</li><li><i class="fas fa-chauffeur"></i> Private chauffeur</li><li><i class="fas fa-helicopter"></i> Helicopter tour</li><li><i class="fas fa-utensils"></i> Fine dining experiences</li></ul><div class="hotel">🏨 The Ritz-Carlton Toronto • 5★ Luxury • Yorkville • Full Board + $600 Credit</div></div>
+            </div>
+        </div>
+
+        <!-- Los Angeles -->
+        <div class="city-card">
+            <div class="city-header">
+                <h3>🌟 🇺🇸 Los Angeles • USA Opener • SoFi Stadium</h3>
+                <p>Match: USA vs Paraguay | June 12, 2026 | SoFi Stadium</p>
+            </div>
+            <div class="tier-grid">
+                <div class="tier-card"><div class="tier-name">Essential</div><div class="tier-price">$8,499</div><ul class="tier-features"><li><i class="fas fa-ticket-alt"></i> FIFA Hospitality Ticket</li><li><i class="fas fa-bed"></i> 4 nights accommodation</li><li><i class="fas fa-bus"></i> Airport & match transfers</li><li><i class="fas fa-film"></i> Hollywood & Santa Monica</li></ul><div class="hotel">🏨 Hilton Los Angeles • 3-4★ • Downtown LA • Bed & Breakfast</div></div>
+                <div class="tier-card"><div class="tier-name">Premium</div><div class="tier-price">$14,999</div><ul class="tier-features"><li><i class="fas fa-ticket-alt"></i> Enhanced FIFA Hospitality</li><li><i class="fas fa-bed"></i> 4 nights luxury hotel</li><li><i class="fas fa-car"></i> VIP transportation</li><li><i class="fas fa-video"></i> Warner Bros Studio tour</li><li><i class="fas fa-utensils"></i> Dinner at Nobu Malibu</li></ul><div class="hotel">🏨 The Westin Bonaventure • 4-5★ • Downtown • Half Board (B&B + 2 Dinners)</div></div>
+                <div class="tier-card"><div class="tier-name">Luxury</div><div class="tier-price">$24,999</div><ul class="tier-features"><li><i class="fas fa-crown"></i> VIP FIFA Premium Suite</li><li><i class="fas fa-bed"></i> 5 nights penthouse</li><li><i class="fas fa-chauffeur"></i> Private luxury car</li><li><i class="fas fa-star"></i> Hollywood VIP experiences</li><li><i class="fas fa-utensils"></i> Fine dining at Spago</li></ul><div class="hotel">🏨 Beverly Wilshire Four Seasons • 5★ Penthouse • Beverly Hills • Full Board + $750 Credit</div></div>
+            </div>
+        </div>
+
+        <!-- Atlanta (Semifinal) -->
+        <div class="city-card">
+            <div class="city-header">
+                <h3>🍑 🇺🇸 Atlanta • Semifinal • Mercedes-Benz Stadium</h3>
+                <p>Matches: Group + Semifinal | June-July 2026 | Mercedes-Benz Stadium</p>
+            </div>
+            <div class="tier-grid">
+                <div class="tier-card"><div class="tier-name">Essential</div><div class="tier-price">$6,499</div><ul class="tier-features"><li><i class="fas fa-ticket-alt"></i> FIFA Hospitality Ticket</li><li><i class="fas fa-bed"></i> 4 nights accommodation</li><li><i class="fas fa-bus"></i> Airport & match transfers</li><li><i class="fas fa-church"></i> MLK Historic Site tour</li></ul><div class="hotel">🏨 Hyatt Regency Atlanta • 3-4★ • Downtown • Bed & Breakfast</div></div>
+                <div class="tier-card"><div class="tier-name">Premium</div><div class="tier-price">$10,999</div><ul class="tier-features"><li><i class="fas fa-ticket-alt"></i> Enhanced FIFA Hospitality</li><li><i class="fas fa-bed"></i> 4 nights premium hotel</li><li><i class="fas fa-car"></i> VIP transfers</li><li><i class="fas fa-globe"></i> CNN & Coca-Cola World</li><li><i class="fas fa-utensils"></i> Southern cuisine dinner</li></ul><div class="hotel">🏨 Marriott Marquis Atlanta • 4-5★ • Peachtree • Half Board (B&B + 2 Dinners)</div></div>
+                <div class="tier-card"><div class="tier-name">Luxury</div><div class="tier-price">$18,999</div><ul class="tier-features"><li><i class="fas fa-crown"></i> VIP FIFA Premium Suite</li><li><i class="fas fa-bed"></i> 5 nights luxury suite</li><li><i class="fas fa-chauffeur"></i> Private transport</li><li><i class="fas fa-ticket-alt"></i> Exclusive experiences</li><li><i class="fas fa-utensils"></i> Fine dining Bacchanalia</li></ul><div class="hotel">🏨 The St. Regis Atlanta • 5★ Suite • Buckhead • Full Board + $500 Credit</div></div>
+            </div>
+        </div>
+
+        <!-- Warning & Important Note -->
+        <div class="warning-box">
+            <strong>⚠️ IMPORTANT</strong><br>
+            • Packages do NOT guarantee visa approval<br>
+            • FIFA tickets from On Location (official provider)<br>
+            • We are independent agency<br>
+            • Prices valid until Feb. 20th 2026<br>
+            • Hotels and accommodations could change subject to availability
+        </div>
+
+        <!-- Begin Your World Cup Journey -->
+        <div class="journey-box">
+            <h2>Begin Your World Cup Journey</h2>
+            <button class="btn" id="requestPackageBtn" style="margin-top: 1rem;">Request Your Package →</button>
+            <div id="contact" class="contact-info" style="margin-top: 2rem;">
+                <div class="contact-item"><i class="fas fa-envelope"></i> info@africapavilion.com</div>
+                <div class="contact-item"><i class="fas fa-phone-alt"></i> +1 (919) 520-5193</div>
+                <div class="contact-item"><i class="fab fa-whatsapp"></i> +1 (919) 520-5193</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- African Matches Schedule & Interactive Fun Facts (original) -->
+    <div id="matches" class="section">
+        <h2 class="section-title"><i class="fas fa-futbol"></i> African Giants • Match Schedule</h2>
         <div class="matches-grid" id="matchesGrid"></div>
-        <div class="fact-widget" id="interactive">
+        <div class="fact-widget">
             <i class="fas fa-lightbulb" style="font-size: 2rem; color: var(--gold);"></i>
             <h3>✨ Did You Know? ✨</h3>
             <p class="fact-text" id="funFactText">The first African nation to reach a World Cup quarter-final was Cameroon in 1990!</p>
             <button class="btn new-fact-btn" id="newFactBtn"><i class="fas fa-sync-alt"></i> Discover another fact</button>
         </div>
-    </section>
+    </div>
 
-    <!-- Newsletter + extra interactive call -->
-    <section id="newsletter" class="section">
+    <!-- Newsletter -->
+    <div class="section">
         <div class="newsletter">
             <h3><i class="fas fa-envelope-open-text"></i> Join the Pavilion Insider</h3>
             <p>Be the first to get exclusive updates, ticket drops & cultural showcases.</p>
@@ -538,123 +611,29 @@
             </div>
             <div class="news-message" id="formMessage"></div>
         </div>
-    </section>
+    </div>
 </main>
 
 <footer>
     <p>© 2025 The African Pavilion — Celebrating African excellence at the World Cup. All imagery and cultural spirit reserved.</p>
-    <p style="margin-top: 0.5rem;">⚽ Experience. Unite. Celebrate. ⚽</p>
+    <p>⚽ Experience. Unite. Celebrate. ⚽</p>
 </footer>
 
-<!-- Lightbox modal structure -->
-<div id="lightbox" class="lightbox">
-    <div class="lightbox-content">
-        <button class="close-lightbox" id="closeLightboxBtn">&times;</button>
-        <img class="lightbox-img" id="lightboxImg" src="" alt="Enlarged pavilion moment">
-        <div class="lightbox-nav">
-            <button class="nav-btn" id="prevImgBtn"><i class="fas fa-chevron-left"></i></button>
-            <button class="nav-btn" id="nextImgBtn"><i class="fas fa-chevron-right"></i></button>
-        </div>
-    </div>
-</div>
-
 <script>
-    // ------------------------------
-    // 1. PHOTO GALLERY DATA (7 images + custom captions)
-    const photoFiles = [
-        "photo1.jpeg", "photo2.jpeg", "photo3.jpeg", "photo4.jpeg", 
-        "photo5.jpeg", "photo6.jpeg", "photo7.jpeg"
-    ];
-    const captionsList = [
-        "Welcome Drum Ceremony", "Pavilion Art & Design", "Legends Meet & Greet",
-        "Culinary Journey", "Football Fanzone", "Rhythms of Africa Night", "World Cup Final Viewing"
-    ];
-    
-    // Lightbox state
-    let currentImageIndex = 0;
-    const galleryItems = [];
-
-    // Render gallery images
-    const galleryContainer = document.getElementById('photoGallery');
-    function buildGallery() {
-        galleryContainer.innerHTML = '';
-        photoFiles.forEach((file, idx) => {
-            const item = document.createElement('div');
-            item.className = 'gallery-item';
-            item.setAttribute('data-index', idx);
-            const img = document.createElement('img');
-            img.src = file;
-            img.alt = captionsList[idx];
-            img.className = 'gallery-img';
-            img.loading = 'lazy';
-            img.onerror = function() { this.src = 'https://placehold.co/600x450?text=Image+Load+Error'; };
-            const captionDiv = document.createElement('div');
-            captionDiv.className = 'gallery-caption';
-            captionDiv.innerHTML = `<i class="fas fa-camera"></i> ${captionsList[idx]}`;
-            item.appendChild(img);
-            item.appendChild(captionDiv);
-            item.addEventListener('click', (e) => {
-                e.stopPropagation();
-                openLightbox(idx);
-            });
-            galleryContainer.appendChild(item);
-        });
-    }
-
-    // Lightbox functionality
-    const lightboxEl = document.getElementById('lightbox');
-    const lightboxImg = document.getElementById('lightboxImg');
-    
-    function openLightbox(index) {
-        currentImageIndex = index;
-        updateLightboxImage();
-        lightboxEl.classList.add('active');
-        document.body.style.overflow = 'hidden';
-    }
-    function updateLightboxImage() {
-        const imgPath = photoFiles[currentImageIndex];
-        lightboxImg.src = imgPath;
-        lightboxImg.alt = captionsList[currentImageIndex];
-        lightboxImg.onerror = () => { lightboxImg.src = 'https://placehold.co/800x600?text=Image+Missing'; };
-    }
-    function closeLightbox() {
-        lightboxEl.classList.remove('active');
-        document.body.style.overflow = '';
-    }
-    function nextImage() {
-        currentImageIndex = (currentImageIndex + 1) % photoFiles.length;
-        updateLightboxImage();
-    }
-    function prevImage() {
-        currentImageIndex = (currentImageIndex - 1 + photoFiles.length) % photoFiles.length;
-        updateLightboxImage();
-    }
-    
-    // 2. Countdown to World Cup 2026 (June 11, 2026, 21:00 UTC? Use 14:00 local time)
-    const targetDate = new Date(2026, 5, 11, 14, 0, 0); // June 11 2026 2pm UTC-4 approx
+    // Countdown to June 11, 2026
+    const targetDate = new Date(2026, 5, 11, 14, 0, 0);
     function updateCountdown() {
         const now = new Date().getTime();
         const distance = targetDate - now;
-        if (distance < 0) {
-            document.getElementById('days').innerText = '00';
-            document.getElementById('hours').innerText = '00';
-            document.getElementById('minutes').innerText = '00';
-            document.getElementById('seconds').innerText = '00';
-            return;
-        }
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((distance % (86400000)) / (3600000));
-        const minutes = Math.floor((distance % 3600000) / 60000);
-        const seconds = Math.floor((distance % 60000) / 1000);
-        document.getElementById('days').innerText = days < 10 ? '0'+days : days;
-        document.getElementById('hours').innerText = hours < 10 ? '0'+hours : hours;
-        document.getElementById('minutes').innerText = minutes < 10 ? '0'+minutes : minutes;
-        document.getElementById('seconds').innerText = seconds < 10 ? '0'+seconds : seconds;
+        if (distance < 0) { document.getElementById('days').innerText = '00'; document.getElementById('hours').innerText='00'; document.getElementById('minutes').innerText='00'; document.getElementById('seconds').innerText='00'; return; }
+        document.getElementById('days').innerText = Math.floor(distance / (1000*60*60*24));
+        document.getElementById('hours').innerText = Math.floor((distance % 86400000) / 3600000);
+        document.getElementById('minutes').innerText = Math.floor((distance % 3600000) / 60000);
+        document.getElementById('seconds').innerText = Math.floor((distance % 60000) / 1000);
     }
-    setInterval(updateCountdown, 1000);
-    updateCountdown();
-    
-    // 3. Interactive Match Schedule (African teams)
+    setInterval(updateCountdown, 1000); updateCountdown();
+
+    // Matches data (African teams)
     const matchesData = [
         { teamA: "🇲🇦 Morocco", teamB: "🇸🇳 Senegal", date: "June 13, 2026", time: "18:00 EST", stadium: "Miami Hard Rock" },
         { teamA: "🇳🇬 Nigeria", teamB: "🇨🇲 Cameroon", date: "June 16, 2026", time: "21:00 EST", stadium: "Atlanta Stadium" },
@@ -665,88 +644,44 @@
     function renderMatches() {
         matchesContainer.innerHTML = '';
         matchesData.forEach((match, idx) => {
-            const card = document.createElement('div');
-            card.className = 'match-card';
-            card.innerHTML = `
-                <div class="teams"><span>${match.teamA}</span> <span class="vs">VS</span> <span>${match.teamB}</span></div>
+            const card = document.createElement('div'); card.className = 'match-card';
+            card.innerHTML = `<div class="teams"><span>${match.teamA}</span> <span class="vs">VS</span> <span>${match.teamB}</span></div>
                 <div class="match-info"><i class="fas fa-calendar-alt"></i> ${match.date} &nbsp;|&nbsp; <i class="fas fa-clock"></i> ${match.time}</div>
                 <div class="match-info"><i class="fas fa-map-marker-alt"></i> ${match.stadium}</div>
-                <button class="remind-btn" data-matchidx="${idx}"><i class="fas fa-bell"></i> Remind Me</button>
-            `;
+                <button class="remind-btn" data-matchidx="${idx}"><i class="fas fa-bell"></i> Remind Me</button>`;
             matchesContainer.appendChild(card);
         });
-        // attach reminder events
         document.querySelectorAll('.remind-btn').forEach(btn => {
             btn.addEventListener('click', (e) => {
                 const idx = btn.getAttribute('data-matchidx');
                 const match = matchesData[idx];
-                alert(`✅ Reminder set! You'll be notified for ${match.teamA} vs ${match.teamB} on ${match.date} at ${match.time}. 🎉 (Demo interactive alert)`);
+                alert(`✅ Reminder set for ${match.teamA} vs ${match.teamB} on ${match.date} at ${match.time}.`);
                 btn.innerHTML = '<i class="fas fa-check"></i> Reminded!';
                 btn.disabled = true;
-                btn.style.opacity = '0.7';
             });
         });
     }
-    
-    // 4. Fun facts interactive widget (African football & Pavilion)
-    const factsArray = [
-        "Senegal’s 2002 World Cup win over France is one of the biggest upsets in history!",
-        "The African Pavilion will host live drumming & art exhibitions from 20+ nations.",
-        "Morocco became the first African team to reach a World Cup semi-final in 2022.",
-        "Over 300 million people across Africa watched the 2022 World Cup final.",
-        "The Pavilion features a replica of a historic football jersey museum.",
-        "Did you know? Asamoah Gyan is Ghana’s all-time World Cup top scorer (6 goals).",
-        "African players have won the UEFA Champions League 15+ times in the last decade."
-    ];
-    const factTextElement = document.getElementById('funFactText');
-    const newFactBtn = document.getElementById('newFactBtn');
-    function randomFact() {
-        const randomIndex = Math.floor(Math.random() * factsArray.length);
-        factTextElement.textContent = factsArray[randomIndex];
-    }
-    newFactBtn.addEventListener('click', randomFact);
-    
-    // 5. Newsletter interactive (no backend, frontend feedback)
-    const subscribeBtn = document.getElementById('subscribeBtn');
-    const emailInput = document.getElementById('subscriberEmail');
-    const formMessage = document.getElementById('formMessage');
-    subscribeBtn.addEventListener('click', () => {
-        const email = emailInput.value.trim();
-        if (!email || !email.includes('@') || !email.includes('.')) {
-            formMessage.innerHTML = '<span style="color:#ffd966;">📧 Please enter a valid email address.</span>';
-            return;
-        }
-        formMessage.innerHTML = '<span style="color:#E6B422;">🎉 Thank you! You’re now part of the Pavilion Circle. Expect exclusive World Cup updates.</span>';
-        emailInput.value = '';
-        setTimeout(() => {
-            formMessage.innerHTML = '';
-        }, 4000);
+    renderMatches();
+
+    // Fun facts
+    const facts = ["Senegal’s 2002 World Cup win over France is one of the biggest upsets!", "The African Pavilion will host live drumming & art exhibitions.", "Morocco became the first African team to reach a World Cup semi-final in 2022.", "Over 300 million Africans watched the 2022 World Cup final.", "The Pavilion features a replica of a historic football jersey museum.", "Asamoah Gyan is Ghana’s all-time World Cup top scorer (6 goals)."];
+    const factText = document.getElementById('funFactText');
+    document.getElementById('newFactBtn').addEventListener('click', () => { factText.innerText = facts[Math.floor(Math.random() * facts.length)]; });
+
+    // Newsletter
+    document.getElementById('subscribeBtn').addEventListener('click', () => {
+        const email = document.getElementById('subscriberEmail').value.trim();
+        const msg = document.getElementById('formMessage');
+        if (!email.includes('@')) { msg.innerHTML = '<span style="color:#ffd966;">📧 Valid email required.</span>'; return; }
+        msg.innerHTML = '<span style="color:#E6B422;">🎉 Thank you! You’re now part of the Pavilion Circle.</span>';
+        document.getElementById('subscriberEmail').value = '';
+        setTimeout(() => msg.innerHTML = '', 4000);
     });
-    
-    // 6. Add interactive hover effect to logo and small confetti? just nice touches.
-    // Bind lightbox controls
-    document.getElementById('closeLightboxBtn').addEventListener('click', closeLightbox);
-    document.getElementById('prevImgBtn').addEventListener('click', prevImage);
-    document.getElementById('nextImgBtn').addEventListener('click', nextImage);
-    lightboxEl.addEventListener('click', (e) => {
-        if (e.target === lightboxEl) closeLightbox();
+
+    // Request Package button
+    document.getElementById('requestPackageBtn').addEventListener('click', () => {
+        alert("📧 Please email info@africapavilion.com or call +1 (919) 520-5193 to reserve your package. Our team will reply within 24h.");
     });
-    document.addEventListener('keydown', (e) => {
-        if (!lightboxEl.classList.contains('active')) return;
-        if (e.key === 'ArrowRight') nextImage();
-        if (e.key === 'ArrowLeft') prevImage();
-        if (e.key === 'Escape') closeLightbox();
-    });
-    
-    // Additional interactive floating effect for match cards (dynamic)
-    function initInteractivity() {
-        buildGallery();          // all 7 images with lightbox
-        renderMatches();        // interactive schedule
-        // little console greeting
-        console.log("African Pavilion interactive experience — ready to celebrate!");
-    }
-    
-    initInteractivity();
 </script>
 </body>
 </html>

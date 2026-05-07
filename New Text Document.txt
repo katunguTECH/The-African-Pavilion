@@ -1,15 +1,212 @@
-i am working on this https://theafricapavilion.com/ which is a world cup site
-i need to improve the site while keeping the fucntionality
-give me a page that i can deploy on railway before committing it to the domain name
-please incorporatte the logo on the site
-here is the logo location C:\Users\katun\Desktop\The African Pavilion\LOGO-03.png
-also incoporate the following photos into the site
-C:\Users\katun\Desktop\The African Pavilion\photo1.jpeg
-C:\Users\katun\Desktop\The African Pavilion\photo2.jpeg
-C:\Users\katun\Desktop\The African Pavilion\photo3.jpeg
-C:\Users\katun\Desktop\The African Pavilion\photo4.jpeg
-C:\Users\katun\Desktop\The African Pavilion\photo5.jpeg
-C:\Users\katun\Desktop\The African Pavilion\photo6.jpeg
-C:\Users\katun\Desktop\The African Pavilion\photo7.jpeg
-i am orking with visual studio code
-make the site as interactive as possible
+below this section  
+Spirit of the Pavilion
+remove the photos
+Welcome Drum Ceremony
+ Welcome Drum Ceremony
+Pavilion Art & Design
+ Pavilion Art & Design
+Legends Meet & Greet
+ Legends Meet & Greet
+Culinary Journey
+ Culinary Journey
+Football Fanzone
+ Football Fanzone
+Rhythms of Africa Night
+ Rhythms of Africa Night
+World Cup Final Viewing
+ World Cup Final Viewing
+add this as the main welcoming photo C:\Users\katun\Desktop\The African Pavilion\photo1.png
+and then below tthis photo insert this text
+explore our packages
+then add these photos
+C:\Users\katun\Desktop\The African Pavilion\Packages For Every Fan.jpeg
+C:\Users\katun\Desktop\The African Pavilion\Elite Package.jpeg
+C:\Users\katun\Desktop\The African Pavilion\Quarter Finals Package.jpeg
+C:\Users\katun\Desktop\The African Pavilion\Semi Finals Package.jpeg
+C:\Users\katun\Desktop\The African Pavilion\Starter Package.jpeg
+C:\Users\katun\Desktop\The African Pavilion\The Finals Package.jpeg
+then below this add this from the old site
+🏟️
+🇲🇽
+Mexico City
+Opening Match • Estadio Azteca
+
+Match
+Mexico vs South Africa
+Date
+June 11, 2026
+Venue
+Estadio Azteca
+Essential
+$4,999
+FIFA Hospitality Match Ticket
+4 nights accommodation
+Airport & match transfers
+City orientation tour
+Hampton Inn & Suites Reforma
+3-4★ • Polanco District
+Bed & Breakfast
+Premium
+$8,999
+Enhanced FIFA Hospitality
+4 nights luxury hotel
+VIP transportation
+Teotihuacan & Historic tours
+Welcome dinner at Quintonil
+JW Marriott Polanco
+4-5★ • Premium Location
+Half Board (B&B + 2 Dinners)
+Luxury
+$15,999
+VIP FIFA Premium Lounge
+5 nights luxury suite
+Private chauffeur service
+Exclusive experiences
+Personal concierge
+Four Seasons Mexico City
+5★ Luxury Suite
+Full Board + $500 Credit
+🍁
+🇨🇦
+Toronto
+Canada Opener • BMO Field
+
+Match
+Canada vs TBD
+Date
+June 12, 2026
+Venue
+BMO Field
+Essential
+$6,299
+FIFA Hospitality Ticket
+4 nights downtown hotel
+Airport & match transfers
+CN Tower & Distillery tour
+Delta by Marriott Toronto
+3-4★ • Harbourfront
+Bed & Breakfast
+Premium
+$10,999
+Enhanced FIFA Hospitality
+4 nights premium hotel
+VIP transportation
+Niagara Falls day trip
+Dinner at Canoe
+Fairmont Royal York
+4-5★ • Financial District
+Half Board (B&B + 2 Dinners)
+Luxury
+$18,999
+VIP FIFA Premium Suite
+5 nights luxury suite
+Private chauffeur
+Helicopter tour
+Fine dining experiences
+The Ritz-Carlton Toronto
+5★ Luxury • Yorkville
+Full Board + $600 Credit
+🌟
+🇺🇸
+Los Angeles
+USA Opener • SoFi Stadium
+
+Match
+USA vs Paraguay
+Date
+June 12, 2026
+Venue
+SoFi Stadium
+Essential
+$8,499
+FIFA Hospitality Ticket
+4 nights accommodation
+Airport & match transfers
+Hollywood & Santa Monica
+Hilton Los Angeles
+3-4★ • Downtown LA
+Bed & Breakfast
+Premium
+$14,999
+Enhanced FIFA Hospitality
+4 nights luxury hotel
+VIP transportation
+Warner Bros Studio tour
+Dinner at Nobu Malibu
+The Westin Bonaventure
+4-5★ • Downtown
+Half Board (B&B + 2 Dinners)
+Luxury
+$24,999
+VIP FIFA Premium Suite
+5 nights penthouse
+Private luxury car
+Hollywood VIP experiences
+Fine dining at Spago
+Beverly Wilshire Four Seasons
+5★ Penthouse • Beverly Hills
+Full Board + $750 Credit
+🍑
+🇺🇸
+Atlanta
+Semifinal • Mercedes-Benz
+
+Matches
+Group + Semifinal
+Dates
+June-July 2026
+Venue
+Mercedes-Benz Stadium
+Essential
+$6,499
+FIFA Hospitality Ticket
+4 nights accommodation
+Airport & match transfers
+MLK Historic Site tour
+Hyatt Regency Atlanta
+3-4★ • Downtown
+Bed & Breakfast
+Premium
+$10,999
+Enhanced FIFA Hospitality
+4 nights premium hotel
+VIP transfers
+CNN & Coca-Cola World
+Southern cuisine dinner
+Marriott Marquis Atlanta
+4-5★ • Peachtree
+Half Board (B&B + 2 Dinners)
+Luxury
+$18,999
+VIP FIFA Premium Suite
+5 nights luxury suite
+Private transport
+Exclusive experiences
+Fine dining Bacchanalia
+The St. Regis Atlanta
+5★ Suite • Buckhead
+Full Board + $500 Credit
+⚠️ IMPORTANT
+• Packages do NOT guarantee visa approval
+
+• FIFA tickets from On Location (official provider)
+
+• We are independent agency
+
+• Prices valid until Feb. 20th 2026
+
+• Hotels and accommodations could change subject to availability
+
+Begin Your World Cup Journey
+Request Your Package
+→
+✉️
+Email
+info@africapavilion.com
+📞
+Phone
++1 (919) 520-5193
+💬
+WhatsApp
++1 (919) 520-5193
+Reserve Your Experience
