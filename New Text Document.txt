@@ -1,0 +1,15 @@
+i am working on this https://theafricapavilion.com/ which is a world cup site
+i need to improve the site while keeping the fucntionality
+give me a page that i can deploy on railway before committing it to the domain name
+please incorporatte the logo on the site
+here is the logo location C:\Users\katun\Desktop\The African Pavilion\LOGO-03.png
+also incoporate the following photos into the site
+C:\Users\katun\Desktop\The African Pavilion\photo1.jpeg
+C:\Users\katun\Desktop\The African Pavilion\photo2.jpeg
+C:\Users\katun\Desktop\The African Pavilion\photo3.jpeg
+C:\Users\katun\Desktop\The African Pavilion\photo4.jpeg
+C:\Users\katun\Desktop\The African Pavilion\photo5.jpeg
+C:\Users\katun\Desktop\The African Pavilion\photo6.jpeg
+C:\Users\katun\Desktop\The African Pavilion\photo7.jpeg
+i am orking with visual studio code
+make the site as interactive as possible
