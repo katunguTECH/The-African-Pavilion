@@ -22,13 +22,18 @@
             overflow-x: hidden;
         }
 
+        /* ============================================
+           🎨 NEW COLOR PALETTE FROM YOUR IMAGE
+           Replace these HEX values with the ones
+           extracted from hue.jpg
+        ============================================ */
         :root {
-            --gold: #E6B422;
-            --deep-green: #1A4A2F;
-            --terracotta: #C76E3A;
-            --warm-sand: #F7E9D7;
-            --charcoal: #1F2C2B;
-            --cream: #FFF9EF;
+            --gold: #E6B422;        /* ← Replace with your extracted gold/primary */
+            --deep-green: #1A4A2F;   /* ← Replace with your extracted dark green */
+            --terracotta: #C76E3A;   /* ← Replace with your extracted accent */
+            --warm-sand: #F7E9D7;    /* ← Replace with your extracted light neutral */
+            --charcoal: #1F2C2B;    /* ← Replace with your extracted dark text color */
+            --cream: #FFF9EF;       /* ← Replace with your extracted off-white */
             --shadow-sm: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.02);
             --shadow-md: 0 20px 25px -12px rgba(0, 0, 0, 0.1);
         }
@@ -45,7 +50,7 @@
         }
 
         .site-header {
-            background: rgba(26, 74, 47, 0.95);
+            background: var(--deep-green);
             backdrop-filter: blur(8px);
             box-shadow: var(--shadow-sm);
             position: sticky;
